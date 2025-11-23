@@ -26,58 +26,57 @@ A aplicação foi construída usando HTML, CSS e JavaScript, integrada a uma API
 
 Criado com:
 
-HTML5
+- HTML5
 
-CSS3 (design personalizado)
+- CSS3 (design personalizado)
 
-JavaScript (DOM e consumo de API com fetch())
+- JavaScript (DOM e consumo de API com fetch())
 
 ☁️ Back-end
 
 Construído com:
 
-Google Apps Script, utilizado para criar uma API REST própria
+- Google Apps Script, utilizado para criar uma API REST própria
 
-Endpoint público com suporte a HTTP GET para comunicação com o site
+- Endpoint público com suporte a HTTP GET para comunicação com o site
 
 📊 Base de dados
 
-Google Sheets funciona como banco de dados
+- Google Sheets funciona como banco de dados
 
-Armazena:
+- Armazena:
 
-Número da rifa
+  - Número da rifa
 
-Status (Livre/Vendido)
+  - Status (Livre/Vendido)
 
-Nome do comprador
+  - Nome do comprador
 
-Data/Hora do PIX
+  - Data/Hora do PIX
 
-API lê esses dados e envia ao site em JSON
+- API lê esses dados e envia ao site em JSON
 
 🔗 Fluxo de Funcionamento
 
-O site faz uma requisição GET para a API.
+1. O site faz uma requisição GET para a API.
 
-A API consulta o Google Sheets.
+2. A API consulta o Google Sheets.
 
-Retorna um JSON com os números e seus status.
+3. Retorna um JSON com os números e seus status.
 
-O site:
+4. O site:
 
-Desabilita automaticamente números vendidos
+  - Desabilita automaticamente números vendidos
 
-Deixa disponíveis apenas os números livres
+  - Deixa disponíveis apenas os números livres
 
-O usuário escolhe um número → abre WhatsApp com mensagem pronta
+5. O usuário escolhe um número → abre WhatsApp com mensagem pronta
 
-Pagamento feito via PIX com QR Code exibido na página
+6. Pagamento feito via PIX com QR Code exibido na página
 
 📌 API Utilizada
 
 Endpoint público (Google Apps Script):
-(Substitua aqui pelo seu link final, se quiser)
 
 https://script.google.com/macros/s/SEU-ENDPOINT/exec
 
