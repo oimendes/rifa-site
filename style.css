@@ -1,0 +1,23 @@
+/* Fotos - Ajuste para limitar o tamanho */
+.foto-principal {
+    max-width: 300px; /* Limita a largura máxima da foto da Wendy (ajuste se precisar) */
+    height: auto;
+    border-radius: 8px;
+    margin: 15px auto; /* Adicione 'auto' para centralizar */
+    display: block; /* Para que 'margin: auto' funcione para centralizar */
+}
+
+/* Fotos dos Prêmios - Pipoqueira e Crochê */
+.foto-premio { 
+    max-width: 180px; /* Limita a largura máxima das fotos dos prêmios */
+    height: auto;
+    margin: 10px auto; /* Centraliza a imagem dentro da sua div de prêmio */
+    display: block;
+    border-radius: 4px;
+}
+
+/* O QR Code já tem 200px, então deve estar bom */
+.qr-code {
+    width: 200px;
+    height: auto;
+}
