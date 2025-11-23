@@ -1,3 +1,6 @@
+/* ======================================= */
+/* ESTILOS GERAIS */
+/* ======================================= */
 body {
     font-family: Arial, sans-serif;
     background: #ffeef7;
@@ -22,6 +25,10 @@ main {
     margin: auto;
 }
 
+section {
+    padding: 20px 0;
+}
+
 .foto-principal {
     max-width: 300px;
     display: block;
@@ -29,6 +36,9 @@ main {
     border-radius: 10px;
 }
 
+/* ======================================= */
+/* LAYOUT DOS PRÊMIOS */
+/* ======================================= */
 .premios-container {
     display: flex;
     justify-content: center;
@@ -56,15 +66,19 @@ main {
     margin: 20px auto;
 }
 
+/* ======================================= */
+/* GRADE DE NÚMEROS */
+/* ======================================= */
 #grid-rifa {
+    /* 10 COLUNAS PADRÃO PARA TELAS GRANDES */
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr); 
     gap: 5px;
     margin: 20px auto;
 }
 
 #grid-rifa div {
-    padding: 10px;
+    padding: 10px 5px; /* Ajuste padding para evitar quebra de linha */
     background: white;
     text-align: center;
     border-radius: 6px;
@@ -73,6 +87,7 @@ main {
     transition: 0.2s;
 }
 
+/* ESTADOS DOS NÚMEROS */
 .numero-disponivel:hover {
     background: #ffe2ef;
 }
@@ -82,12 +97,15 @@ main {
     color: white;
 }
 
-.numero-vendido {
-    background: #88cc88;
+.numero-vendido, .numero-indisponivel {
+    background: #88cc88; /* Verde para vendido ou indisponível */
     color: white;
     cursor: not-allowed;
 }
 
+/* ======================================= */
+/* BOTÃO WHATSAPP */
+/* ======================================= */
 #btn-whatsapp {
     margin-top: 15px;
     width: 100%;
@@ -103,4 +121,51 @@ main {
 #btn-whatsapp:disabled {
     background: #e5a3c4;
     cursor: not-allowed;
+}
+
+/* ======================================= */
+/* RESPONSIVIDADE - MEDIA QUERIES */
+/* ======================================= */
+
+@media (max-width: 768px) { /* Para telas de tablets e celulares grandes */
+    main {
+        width: 95%; 
+    }
+
+    #grid-rifa {
+        /* MUDANÇA: 5 números por linha */
+        grid-template-columns: repeat(5, 1fr); 
+        gap: 8px; 
+    }
+
+    .premios-container {
+        /* Prêmios ficam empilhados em coluna */
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .premio {
+        width: 80%; 
+        max-width: 300px; 
+    }
+
+    .foto-principal, .qr-code {
+        max-width: 250px; 
+    }
+
+    #btn-whatsapp {
+        font-size: 14px; 
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) { /* Para telas de celular muito pequenas */
+    #grid-rifa {
+        /* MUDANÇA: 4 números por linha */
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 6px;
+    }
+    .foto-principal, .qr-code {
+        max-width: 200px; 
+    }
 }
