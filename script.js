@@ -1,3 +1,6 @@
+// -------------------------------
+// CONFIGURAÇÕES
+// -------------------------------
 const TOTAL_NUMEROS = 200;
 const PRECO_NUMERO = 15;
 const SEU_NUMERO_WHATSAPP = "5519981131148";
@@ -77,7 +80,7 @@ function selecionarNumero(numero, elemento) {
 function atualizarBotaoWhatsapp() {
     if (numerosSelecionados.length > 0) {
         const total = (numerosSelecionados.length * PRECO_NUMERO).toFixed(2);
-        btnWhatsapp.innerText = `Chamar no WhatsApp: ${numerosSelecionados.length} nºs (R$ ${total})`;
+        btnWhatsapp.innerText = `Chamar no WhatsApp para finalizar: ${numerosSelecionados.length} nºs (R$ ${total})`;
         btnWhatsapp.disabled = false;
 
     } else {
