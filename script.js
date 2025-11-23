@@ -1,9 +1,3 @@
-// ==========================================================
-// 🚨 ATENÇÃO: ESTE É SEU "BANCO DE DADOS" MANUAL 🚨
-// ==========================================================
-// Para marcar um número como VENDIDO, você DEVE adicionar o número aqui.
-// Depois, salve o arquivo e faça o commit/push para o GitHub!
-
 const NUMEROS_VENDIDOS = [
     // Exemplo:
     // 5, 18, 200, 
@@ -17,10 +11,10 @@ const gridRifa = document.getElementById('grid-rifa');
 const btnWhatsapp = document.getElementById('btn-whatsapp');
 
 let numerosSelecionados = [];
-const SEU_NUMERO_WHATSAPP = "5519981131148"; // EX: "5519987654321" (Inclua 55 e DDD)
+const SEU_NUMERO_WHATSAPP = "5519981131148"; 
 
 // ----------------------------------------------------------
-// 1. GERAÇÃO DA GRADE
+
 // ----------------------------------------------------------
 function gerarGrade() {
     gridRifa.innerHTML = ''; // Limpa a grade antes de gerar
@@ -43,7 +37,7 @@ function gerarGrade() {
 }
 
 // ----------------------------------------------------------
-// 2. LÓGICA DE SELEÇÃO
+
 // ----------------------------------------------------------
 function selecionarNumero(numero, elemento) {
     // Verifica se o número já está selecionado
@@ -65,7 +59,7 @@ function selecionarNumero(numero, elemento) {
 }
 
 // ----------------------------------------------------------
-// 3. ATUALIZAÇÃO DO BOTÃO E WHATSAPP
+
 // ----------------------------------------------------------
 function atualizarBotaoWhatsapp() {
     if (numerosSelecionados.length > 0) {
