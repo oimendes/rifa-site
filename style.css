@@ -1,167 +1,106 @@
 body {
-  font-family: "Poppins", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #ffeef7; /* rosa clarinho muito suave */
-  color: #444;
+    font-family: Arial, sans-serif;
+    background: #ffeef7;
+    margin: 0;
+    padding: 0;
+    color: #444;
 }
 
-header {
-  text-align: center;
-  padding: 25px 15px;
-  background: #ff74b5; /* rosa mais forte */
-  color: white;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffdaf0;
 }
 
-h1, h2, h3 {
-  font-weight: 600;
+h1, h2 {
+    color: #c7437f;
 }
 
 main {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 15px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-
-section {
-  margin-bottom: 40px;
-}
-
-
-#apresentacao {
-  text-align: center;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
 }
 
 .foto-principal {
-  max-width: 280px;
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin: 18px auto;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-  display: block;
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
 }
 
-
 .premios-container {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .premio {
-  width: 260px;
-  background: #fff5fa; /* rosa super claro */
-  padding: 15px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 8px #ffbcd9;
 }
 
 .foto-premio {
-  max-width: 180px;
-  width: 100%;
-  border-radius: 10px;
-  margin: 12px auto;
-  display: block;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-}
-
-
-#pix-info {
-  text-align: center;
+    max-width: 180px;
+    border-radius: 6px;
 }
 
 .qr-code {
-  width: 200px;
-  height: auto;
-  margin: 10px auto;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-  display: block;
+    width: 200px;
+    display: block;
+    margin: 20px auto;
 }
-
-#btn-whatsapp {
-  margin-top: 15px;
-  padding: 12px 20px;
-  border: none;
-  font-size: 16px;
-  background: #ff74b5;
-  color: white;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-#btn-whatsapp:disabled {
-  background: #f5b5d4;
-  cursor: not-allowed;
-}
-
-#btn-whatsapp:not(:disabled):hover {
-  background: #ff4a9e;
-}
-
 
 #grid-rifa {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-  gap: 10px;
-  margin-top: 20px;
-  padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    margin: 20px auto;
 }
 
 #grid-rifa div {
-  padding: 12px 0;
-  border-radius: 8px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 15px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: 0.2s;
-}
-
-/* Disponível */
-.numero-disponivel {
-  background: #ffffff;
-  border: 2px solid #ffb6d9;
-  color: #333;
+    padding: 10px;
+    background: white;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #ffcce7;
+    transition: 0.2s;
 }
 
 .numero-disponivel:hover {
-  background: #ffd5ea;
+    background: #ffe2ef;
 }
 
-/* Selecionado */
 .numero-selecionado {
-  background: #ff74b5;
-  border: 2px solid #ff2d8a;
-  color: white;
+    background: #ff8cc9;
+    color: white;
 }
 
-/* Vendido */
 .numero-vendido {
-  background: #c7ffd1;
-  border: 2px solid #79d98b;
-  color: #2e6a39;
-  cursor: not-allowed;
-  opacity: 0.8;
+    background: #88cc88;
+    color: white;
+    cursor: not-allowed;
 }
 
-/* ===================== FOOTER ===================== */
-footer {
-  text-align: center;
-  padding: 20px;
-  margin-top: 20px;
-  font-size: 14px;
-  color: #555;
+#btn-whatsapp {
+    margin-top: 15px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #c7437f;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btn-whatsapp:disabled {
+    background: #e5a3c4;
+    cursor: not-allowed;
 }
