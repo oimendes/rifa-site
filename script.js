@@ -1,7 +1,7 @@
 // -------------------------------
 // CONFIGURAÇÕES
 // -------------------------------
-const TOTAL_NUMEROS = 200;
+const TOTAL_NUMEROS = 100;
 const PRECO_NUMERO = 15;
 const SEU_NUMERO_WHATSAPP = "5519981131148";
 
