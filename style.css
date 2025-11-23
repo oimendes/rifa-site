@@ -1,6 +1,3 @@
-/* ======================================= */
-/* ESTILOS GERAIS */
-/* ======================================= */
 body {
     font-family: Arial, sans-serif;
     background: #ffeef7;
@@ -36,9 +33,6 @@ section {
     border-radius: 10px;
 }
 
-/* ======================================= */
-/* LAYOUT DOS PRÊMIOS */
-/* ======================================= */
 .premios-container {
     display: flex;
     justify-content: center;
@@ -66,9 +60,6 @@ section {
     margin: 20px auto;
 }
 
-/* ======================================= */
-/* GRADE DE NÚMEROS */
-/* ======================================= */
 #grid-rifa {
     /* 10 COLUNAS PADRÃO PARA TELAS GRANDES */
     display: grid;
@@ -103,9 +94,6 @@ section {
     cursor: not-allowed;
 }
 
-/* ======================================= */
-/* BOTÃO WHATSAPP SELEÇÃO DOS NÚMEROS */
-/* ======================================= */
 #btn-whatsapp {
     margin-top: 15px;
     width: 100%;
@@ -123,9 +111,6 @@ section {
     cursor: not-allowed;
 }
 
-/* ======================================= */
-/* BOTÕES WHATSAPP DOS CONTATOS */
-/* ======================================= */
 .whats-btn {
     display: inline-block;
     margin: 8px 0;
